@@ -1,0 +1,34 @@
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a class="navbar-item" routerLink="/">
+      <img style="width:63px;height:41px !important;max-height: 5rem;" src="assets/images/logo.png" width="95" height="61" alt="YES4MKT Demo App" /> 
+    </a>
+    <a class="navbar-item" routerLink="/">
+        <img style="width:212px;height:150px !important;max-height: 5rem;" src="https://www.kerastase.pt/-/media/project/loreal/brand-sites/kerastase/emea/pt/identity/kerastase-paris-logo.svg?h=68&w=96&la=pt-PT&hash=5AB31F277E7675CEA02395A776EAA758775BC195" width="95" height="61" alt="Kérastase Demo App" /> 
+    </a>
+ 
+    <a id="navToggle" role="button" class="navbar-burger" (click)="toggleCollapse()" [ngClass]="{'is-active': show}">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+
+  <div class="navbar-menu" [ngClass]="{'is-active': show}">
+    <div class="navbar-end">
+      <a class="navbar-item" routerLink="/login">
+        Please test login (Email and Password or Google)
+      </a>
+      <!--   <a class="navbar-item" routerLink="/ssr">
+        SSR Universal
+      </a> -->
+      <a class="navbar-item" routerLink="/notes">
+        Please test access to database (Firestore)
+      </a>
+
+      <!--  <a class="navbar-item" routerLink="/uploads">
+        File Uploads
+      </a> -->
+    </div>
+  </div>
+</nav>
