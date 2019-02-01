@@ -21,6 +21,7 @@ import { AngularFirestoreModule } from 'angularfire2/firestore';
 import { AngularFireStorageModule } from 'angularfire2/storage';
 import { AngularFireAuthModule } from 'angularfire2/auth';
 import { AngularFireFunctionsModule } from 'angularfire2/functions';
+import { RestModule } from './rest/rest.module';
 
 // IMPORTANT
 // Add your own project credentials to environments/*.ts
@@ -34,6 +35,7 @@ import { AngularFireFunctionsModule } from 'angularfire2/functions';
     CoreModule,
     UiModule,
     NotesModule,
+    RestModule,
     UploadsModule,
     AngularFireModule.initializeApp(environment.firebase, 'firestarter'),
     AngularFirestoreModule,
